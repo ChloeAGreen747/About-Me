@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset=utf-8>
+		<link rel="stylesheet" href="Styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="This page is about my skills">
+		<link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<title>Skills</title>
+	</head>
+	
+	<body>
+		<nav>
+			<ul class="mainnav">
+				<li id="Link1"><a href="index.html">Home/About</a></li>
+				<li id="Link2"><a href="Skills.html">Skills</a></li>
+				<li id="Link3"><a href="Qualifications.html">Qualifications</a></li>
+			</ul>
+		</nav>
+
+		<header class="Banner" id="Skills_Banner"></header>
+
+		<main id="Skills_Main">
+			<section id="Info">
+				<h2 class="Pages_Center">What is CSS and ECMAScript?</h2>
+
+				<p>CSS stands for Cascading Style Sheet. It is used to show how HTML elements are to be displayed on screen by referencing 
+					the individual elements that make up the HTML page. CSS controls the background colour, text fonts and colours and 
+					controls where each element is to be placed on the page.</p>
+				<p>ECMAScript stands for European Computer Manufacturer’s Association. It is a script language which controls how the website
+					 behaves and responds to user input on the webpage. It is most commonly used for client-side scripting on websites.</p>
+				<p>The two designs below demonstrate how CSS can be used to style the same HTML script in completely different ways. The 
+					Javascript example below demonstrates the use of Javascript to make the page interactive to users.</p>
+			</section>
+
+			<div id="Pages">
+				<section id="Design_1">
+					<h2 class="Pages_Center">Design 1</h2>
+					<div>
+						<img id="design1_pic" src="Images/Design1_Page.webp" srcset="Images/Design1_Page.jpg" alt="Screenshot of Design 1 Page">	
+						<p class="Pages_Center">This is the first design page which demonstrates how css can change the way the website looks.<br><br>
+							<a href="Design1.html">Go to Design 1</a>
+						</p>
+					</div>		
+				</section>
+				
+				<section id="Design_2">
+					<h2 class="Pages_Center">Design 2</h2>
+					<div>
+						<img id="design2_pic" src="Images/Design2_Page.webp" srcset="Images/Design2_Page.jpg" alt="Screenshot of Design 2 Page">
+						<p class="Pages_Center">This is the second design page which has the same HTML as Design 1 however this page is designed in
+							a completely different way.<br><br>
+							<a href="Design2.html">Go to Design 2</a>
+						</p>
+					</div>			
+				</section>
+
+				<section id="JavaScript">
+					<h2 class="Pages_Center">JavaScript</h2>
+					<div>
+						<img id="javascript_pic" src="Images/CoffeePage.webp" srcset="Images/CoffeePage.jpg" alt="Screenshot of Coffee Page">
+						<p class="Pages_Center">This is the coffee order page which deonstrates the use of both CSS and Javascript to allow the user to select different coffee orders which is then output with the cost of their selections.<br><br>
+							<a href="Coffee.html">Go to JavaScript</a>
+						</p>
+					</div>				
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<p>Images from unsplash.com and calligraphyalphabet.org.</p>
+		</footer>
+		<script>
+			//check whether browser support service workers
+			if ('serviceWorker' in navigator) {
+				//wait until page loaded to avoid delaying rendering
+				window.addEventListener('load', function() {
+					//register service worker
+					navigator.serviceWorker.register('serviceworker.js').then(
+						function(registration) {
+							console.log('Service worker registration successful', 
+										 registration);
+						}, 
+						function(err) {
+							console.log('Service worker registration failed', err);
+					});
+				});
+			}
+		</script>
+	</body>
+</html>        
+            

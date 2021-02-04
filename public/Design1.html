@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset=utf-8>
+		<link rel="stylesheet" href="Design1.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="This page is about me">
+		<link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<title>Design 1</title>
+	</head>
+	
+	<body>
+		<div id="header">
+			<header id="main">
+					<h1>Software Development</h1>
+			</header>
+
+			<nav>
+				<ul class="mainnav">
+					<li id="Link1"><a href="index.html">Home/About</a></li>
+					<li id="Link2"><a href="Skills.html">Skills</a></li>
+					<li id="Link3"><a href="Qualifications.html">Qualifications</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<main>
+			<section id="Part1">
+				<picture id="img1">
+					<source srcset="Images/Design_Img1.webp" media="(min-width: 1000px)">
+					<source srcset="Images/Design_Img1(1).webp" media="(min-width: 600px)">
+					<source srcset="Images/Design_Img1(2).webp">
+					<img src="Images/Design_Img1.jpg" alt="Picture of code">
+				</picture>
+				<div id="part1_text">
+					<h2>What is Software Development?</h2>
+					<p>
+						Software is a set of instructions or programs that tell a computer what to do. 
+						Software development is the process of creating, designing, deploying and supporting software. To be a Software Developer you should
+						be able to analyze users needs in order to develop the software that meets those needs.
+					</p>
+				</div>
+			</section>
+
+			<section id="Part2">
+				<picture id="img2">
+					<source srcset="Images/Design_Img2.webp" media="(min-width: 1000px)">
+					<source srcset="Images/Design_Img2(1).webp" media="(min-width: 600px)">
+					<source srcset="Images/Design_Img2(2).webp">
+					<img src="Images/Design_Img2.jpg" alt="A laptop with code on it">
+				</picture>
+				<div id="part2_text">
+					<h2>Why Did I Choose Software Development?</h2>
+					<p>
+						I chose Software Development as my favourite part of Computer Science is programming. I also love maths and problem solving which
+						is a key part of being able to program. When I finish university I hope to become a software developer as it combines the two things I enjoy.
+					</p>
+				</div>	
+			</section>
+
+			<section id="Part3">
+				<picture id="img3">
+					<source srcset="Images/Design_Img3.webp" media="(min-width: 1000px)">
+					<source srcset="Images/Design_Img3(1).webp" media="(min-width: 600px)">
+					<source srcset="Images/Design_Img3(2).webp">
+					<img src="Images/Design_Img3.jpg" alt="A laptop displaying code">
+				</picture>
+				<div id="part3_text">
+					<h2>What Skills Do You Need For Software Development?</h2>
+					<ul>
+						<li>Teamwork and good communication skills are required since most software is developed by a team of developers</li>
+						<li>Be able to use different programming languages</li>
+						<li>You should have good written skills so that other people can understand and read your code.</li>
+						<li>You need to be good at problem solving not only to create the software but to find errors in the code more efficiently</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>Images from unsplash.com and calligraphyalphabet.org.</p>
+		</footer>
+		<script>
+			//check whether browser support service workers
+			if ('serviceWorker' in navigator) {
+				//wait until page loaded to avoid delaying rendering
+				window.addEventListener('load', function() {
+					//register service worker
+					navigator.serviceWorker.register('serviceworker.js').then(
+						function(registration) {
+							console.log('Service worker registration successful', 
+										 registration);
+						}, 
+						function(err) {
+							console.log('Service worker registration failed', err);
+					});
+				});
+			}
+		</script> 
+	</body>
+</html>          
+            

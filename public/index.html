@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Meta tags to describe the pages content -->
+		<meta charset=utf-8>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="This page is about me">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<!-- Favicon Images -->
+		<link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+		<link rel="manifest" href="manifest.json">
+		<!-- Title of the page -->
+		<title>Home/About Me</title>
+		<!-- Link to the style sheet -->
+		<link rel="stylesheet" href="Styles.css">
+	</head>
+	
+	<body>
+		<!-- Navigation Bar with the links to the homepage, skills page and qualifications page -->
+		<nav>
+			<ul class="mainnav">
+				<li id="Link1"><a href="index.html">Home/About</a></li>
+				<li id="Link2"><a href="Skills.html">Skills</a></li>
+				<li id="Link3"><a href="Qualifications.html">Qualifications</a></li>
+			</ul>
+		</nav>
+		
+		<header id="AboutMe_Banner" class="Banner"></header>
+
+		<main>
+			<h1>About Me</h1>
+			<div id="AboutMeMain">
+				<picture>
+					<!-- Varying quality images to load on different screen sizes with a fall back jpg image -->
+					<source srcset="Images/MainImg.webp" media="(min-width: 1000px)">
+					<source srcset="Images/MainImg(1).webp" media="(min-width: 870px)">
+					<source srcset="Images/MainImg(2).webp" media="(min-width: 700px)">
+					<source srcset="Images/MainImg(3).webp">
+					<img id="MainImg" src="Images/MainImg.jpg" alt="Person Programming">
+				</picture>
+		</main>
+
+		<footer>
+			<p>Images from unsplash.com and calligraphyalphabet.org.</p>
+		</footer>  
+		<script>
+			//check whether browser support service workers
+			if ('serviceWorker' in navigator) {
+				//wait until page loaded to avoid delaying rendering
+				window.addEventListener('load', function() {
+					//register service worker
+					navigator.serviceWorker.register('serviceworker.js').then(
+						function(registration) {
+							console.log('Service worker registration successful', 
+										 registration);
+						}, 
+						function(err) {
+							console.log('Service worker registration failed', err);
+					});
+				});
+			}
+		</script>
+	</body>
+</html>        
+            

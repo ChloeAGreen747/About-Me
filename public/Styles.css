@@ -1,0 +1,579 @@
+/* Mobile */
+body
+{
+	background:whitesmoke;
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0;
+}
+
+nav{
+    background:rgb(236, 240, 238);
+	margin: 0;
+	padding: 5px;
+	font-family:'Calibri Light', Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: sticky;
+    top:0;
+}
+	
+.mainnav
+{
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows:repeat(1,1fr);
+	padding-right:50px;
+}
+
+a:link, a:active, a:visited{
+    color:rgb(82, 82, 82);
+    text-decoration: none;
+}
+
+#Link1{
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#Link2{
+	grid-column: 2;
+	grid-row: 1;
+}
+
+#Link3{
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.Banner{
+	height:140px;
+	background: center no-repeat;
+	background-size: cover;
+}
+
+main{
+    padding: 0 25px 0 25px;
+}
+
+h2{
+	font-family: "calibri light";
+	font-size: 20px;
+}
+
+h3{
+	font-family: "calibri light";
+	font-size: 20px;
+}
+
+footer{
+	background:rgb(236, 240, 238);
+	color: rgb(82, 82, 82);
+	margin: 0px;
+	padding: 5px 30px 5px 30px;
+	font-family:'Calibri Light', Arial, Helvetica, sans-serif;
+}
+
+/* About Me Page */
+
+h1{
+	margin: 0;
+	text-align: center;
+	justify-content: center;
+	padding: 20px 0px 20px 0px;
+	font-family:'Calibri Light', Arial, Helvetica, sans-serif;
+}
+
+#MainImg{
+    width: 95%;
+    height: auto;
+	padding: 10px;
+	border-bottom: 1px solid rgb(80, 112, 104);
+}
+
+#AboutMe_Banner{
+	background-image: url("Images/AboutMeBanner.webp"), url("Images/AboutMeBanner.jpg");
+}
+
+/* Skills Page */
+
+#Skills_Banner{
+	background-image: url("Images/HTMLBanner.webp"), url("Images/HTMLBanner.jpg");
+}
+
+#Info,#Design_1,#Design_2{
+    border-bottom: 1px solid rgb(80, 112, 104);
+}
+
+#Info,#Design_1,#Design_2,#JavaScript{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#design1_pic, #design2_pic, #javascript_pic{
+	width: 100%;
+	border: 1px solid rgb(80, 112, 104);
+}
+
+/* Qualifications Page */
+
+table{
+	font-family:"Arial";
+    text-align:center;
+    border-collapse: collapse;
+}
+
+#table_div{
+	overflow-x:auto;
+}
+
+td{
+	border-right: 1px solid rgb(80, 112, 104);
+	padding: 5px;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+#Qualifications_Banner{
+	background-image: url("Images/Qualifications_Banner.webp"), url("Images/Qualifications_Banner.jpg") ;
+}
+
+/* Coffee Page */
+
+#Coffee_Banner{
+	background-image: url("Images/CoffeeBanner.webp"), url("Images/CoffeeBanner.jpg") ;
+}
+
+#Coffee{
+    padding:0px;
+}
+
+.Coffee_headers{
+	font-family:"Calibri Light";
+	font-size: 25px;
+	text-align: center;
+}
+
+.coffee_title{
+	text-align: center;
+}
+
+.buttons{
+	text-align: center;
+}
+
+.button {
+	background-color: whitesmoke;
+	border: none;
+	padding: 10px;
+	text-align: center;
+	text-decoration: underline;
+	display: inline-block;
+	font-size: 20px;
+	font-family:'Calibri Light';
+	justify-content: center;
+}
+
+#place{
+	background-color: rgb(236, 240, 238);
+}
+
+#PriceTable{
+	padding: 15px 25px 15px 45px;
+	text-align: center;
+}
+
+#PriceTable2{
+	display: inline-block;
+}
+
+fieldset{
+    border-style: none;
+	padding-left:20px;
+}
+
+.Radio_Buttons{
+	list-style: none;
+	padding: 0px;
+}
+
+.Radio_List{
+	display: inline-block;
+}
+
+#size_drink, #type_drink, #milk_drink, #extras_drink{
+	border-top: 1px solid rgb(80, 112, 104);
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#size_drink, #type_drink, #milk_drink, #extras_drink{
+	display: none;
+}
+
+#extras_drink{
+	text-align: left;
+}
+
+#s1, #s2, #s3, #t1, #t2, #t3, #t4, #t5, #m1, #m2, #m3, #m4, #m5, #e1, #e2{
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+}
+
+#s2, #s3, #t2, #t3, #t4, #t5, #m2, #m3, #m4, #m5{
+	margin-left: 20px;
+}
+
+#e1, #e2{
+	margin-bottom: 10px;
+}
+
+#e3{
+	float:left;
+	margin-right:5px;
+}
+
+#add{
+	display: none;
+}
+
+#add_favourite{
+	display: none;
+}
+
+#total_order{
+	background:rgb(236, 240, 238);
+	color: rgb(108, 114, 104);
+	padding: 5px 20px 5px 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#coffee_footer{
+	border-top: 1px solid rgb(80, 112, 104);
+}
+
+
+/* Tablet */
+
+@media only screen and (min-width : 600px) and (max-width : 840px) {
+
+	/* Skills Page */
+
+	.Pages_Center{
+		text-align: left;
+	}
+
+	#design1_pic, #design2_pic, #javascript_pic{
+		float:left;
+		width:30%;
+		height:auto;
+		margin: 0px 20px 10px 0px;
+	}
+}
+
+/* About Me Page */
+
+@media only screen and (min-width : 700px) and (max-width : 870px) {
+
+	#AboutMeMain{
+		display: grid;
+		grid-template-rows: auto auto auto;
+		grid-template-columns: 350px auto;
+	}
+
+	#MainImg{
+		border-right: 1px solid rgb(80, 112, 104);
+		max-width: 350px;
+		height: auto;
+	}
+
+	picture{
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	#About_Me{
+		grid-column: 1;
+		grid-row: 2/4;
+	}
+
+	#Interests{
+		grid-column: 2;
+		grid-row: 3;
+		padding-left: 20px;
+	}
+
+	p{
+		padding-left: 20px;
+	}
+
+	#Work{
+		grid-column: 2;
+		grid-row: 1;
+		padding-left: 20px;
+	}
+
+	#Qualities{
+		grid-column: 2;
+		grid-row: 2;
+		padding-left: 20px;
+	}
+}
+
+@media only screen and (min-width : 870px) and (max-width : 1000px) {
+
+	#AboutMeMain{
+		display: grid;
+		grid-template-rows: 300px 140px auto;
+		grid-template-columns: 350px auto;
+	}
+
+	#MainImg{
+		border-right: 1px solid rgb(80, 112, 104);
+		max-width: 350px;
+		height: auto;
+	}
+
+	picture{
+		grid-column: 1;
+		grid-row: 1/3;
+	}
+
+	#About_Me{
+		grid-column: 1;
+		grid-row: 3;
+	}
+
+	#Interests{
+		grid-column: 2;
+		grid-row: 2;
+		padding-left: 20px;
+	}
+
+	p{
+		padding-left: 20px;
+	}
+
+	#Work{
+		grid-column: 2;
+		grid-row: 1;
+		padding-left: 20px;
+	}
+
+	#Qualities{
+		grid-column: 2;
+		grid-row: 3;
+		padding-left: 20px;
+	}
+}
+
+/* Web */
+
+@media only screen and (min-width : 1000px) {
+
+	/* About Me Page */
+
+	#AboutMeMain{
+		display: grid;
+		grid-template-rows: auto auto auto;
+		grid-template-columns: 450px auto auto;
+	}
+
+	picture{
+		grid-column: 1;
+		grid-row: 1/4;
+	}
+
+	#MainImg{
+		border-bottom: none;
+		border-right: 1px solid rgb(80, 112, 104);
+	}
+
+	#About_Me{
+		grid-column: 2/4;
+		grid-row: 1;
+		padding-left: 20px;
+	}
+
+	#Interests{
+		grid-column: 2;
+		grid-row: 2;
+		padding-left: 20px;
+	}
+
+	#Work{
+		grid-column: 2/4;
+		grid-row: 3;
+		padding-left: 20px;
+	}
+
+	#Qualities{
+		grid-column: 3;
+		grid-row: 2;
+		padding-left: 20px;
+	}
+}
+
+
+@media only screen and (min-width : 840px) {
+
+    /* Skills Page */
+
+    #Info{
+        justify-content: center;
+    }
+
+    #Pages{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows: repeat(1,1fr);
+	}
+
+	#Design_1,#Design_2
+	{
+		grid-column: 1;
+		grid-row:2;
+		border-bottom-style: none;
+		border-right: 1px solid rgb(80, 112, 104);
+		justify-content: center;
+	}
+
+	#Design_2
+	{
+        grid-column: 2;
+        grid-row: 2;
+	}
+
+	#JavaScript
+	{
+		grid-column: 3;
+        grid-row:2;
+        padding-left: 20px;
+        justify-content: center;
+	}
+
+	#design1_pic, #design2_pic, #javascript_pic{
+		width: 80%;
+		display: block;
+ 		margin-left: auto;
+  		margin-right: auto;
+    }
+    
+    #Skills_Main{
+        margin: 15px 0px 15px 0px;
+    }
+
+    .Pages_Center{
+		text-align: center;
+		padding: 0px 10px 0px 10px;
+	}
+
+	/* Qualifications Page */
+
+	#Qualifications_Main{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#grades_table{
+		grid-column: 1;
+	}
+
+	#qualifications2{
+		grid-column: 2;
+	}
+	
+	h2{
+		text-align: center;
+	}
+}
+
+/* Coffee Page Web */
+
+@media only screen and (min-width : 850px) {
+
+	a:hover{
+		border-bottom: 1px solid;
+	}
+
+	#Coffee{
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+	}
+
+	#PriceTable{
+		grid-column: 1/3;
+		grid-row: 1;
+	}
+
+	#total_order{
+		grid-column: 3;
+		grid-row: 1/4;
+	}
+	
+	#form_get{
+		grid-column: 1/3;
+		grid-row: 2;
+	}
+}
+
+/* Navigation Bar */
+
+@media only screen and (max-width : 320px) {
+
+	.mainnav
+	{
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+		grid-template-rows:repeat(3,1fr);
+	}
+
+	#Link1{
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	#Link2{
+		grid-column: 1;
+		grid-row: 2;
+	}
+
+	#Link3{
+		grid-column: 1;
+		grid-row: 3;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

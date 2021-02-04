@@ -1,0 +1,4 @@
+{
+    "milk_type" : ["Whole Milk", "Semi-Skimmed Milk", "Skimmed Milk", "Coconut Milk", "Soya Milk"],
+    "coffee_type" : ["Latte", "Cappuccino", "Flat White", "Espresso", "Americano"]
+}

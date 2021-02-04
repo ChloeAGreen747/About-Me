@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset=utf-8>
+		<link rel="stylesheet" href="Styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="This page is about me">
+		<link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<title>Coffee Order</title>
+	</head>
+	
+	<body>
+		<nav>
+			<ul class="mainnav">
+				<li id="Link1"><a href="index.html">Home/About</a></li>
+				<li id="Link2"><a href="Skills.html">Skills</a></li>
+				<li id="Link3"><a href="Qualifications.html">Qualifications</a></li>
+			</ul>
+		</nav>
+
+		<header class="Banner" id="Coffee_Banner"></header>
+
+		<main id="Coffee">
+			<section id="PriceTable">
+				<h2>Price Table</h2>
+				<div id="PriceTable2">
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">Item</th>
+								<th scope="col">Price</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Small</td>
+								<td>£2.45</td>
+							</tr>
+							<tr>
+								<td>Medium</td>
+								<td>£2.65</td>
+							</tr>
+							<tr>
+								<td>Large</td>
+								<td>£2.85</td>
+							</tr>
+							<tr>
+								<td>Cream</td>
+								<td>50p</td>
+							</tr>
+							<tr>
+								<td>Price for 1x Syrup Shot</td>
+								<td>25p</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<form id="form_get" method=get>
+				<p class="buttons"><button type="button" class ="button" id="order_favourite">Order Favourite</button>  Or  <button type="button" class ="button" id="new_order">Create New Order</button></p>
+				<fieldset>
+					<section id="size_drink">
+
+						<br><br><legend class="Coffee_headers"><strong>Choose Your Size</strong></legend><br>
+						<ul class="Radio_Buttons">
+							<li class="Radio_List"><input type="radio" class="s" id="s1" name="size" value="Small"><label for="s1">Small</label></li>
+							<li class="Radio_List"><input type="radio" class="s" id="s2" name="size" value="Medium"><label for="s2">Medium</label></li>
+							<li class="Radio_List"><input type="radio" class="s" id="s3" name="size" value="Large"><label for="s3">Large</label></li>
+						</ul>
+
+					</section>
+
+					<section id="type_drink">
+						
+						<br><br><legend class="Coffee_headers"><strong>Choose Your Drink</strong></legend><br>
+						<ul class="Radio_Buttons">
+							<li class="Radio_List"><input type="radio" class="t" id="t1" name="type" value="Latte"><label for="t1">Latte</label></li>
+							<li class="Radio_List"><input type="radio" class="t" id="t2" name="type" value="Cappuccino"><label for="t2">Cappuccino</label></li>
+							<li class="Radio_List"><input type="radio" class="t" id="t3" name="type" value="Flat White"><label for="t3">Flat White</label></li>
+							<li class="Radio_List"><input type="radio" class="t" id="t4" name="type" value="Espresso"><label for="t4">Espresso</label></li>
+							<li class="Radio_List"><input type="radio" class="t" id="t5" name="type" value="Americano"><label for="t5">Americano</label></li>
+						</ul>
+				
+					</section>
+
+					<section id="milk_drink">
+						
+						<br><br><legend class="Coffee_headers"><strong>Choose Your Milk</strong></legend><br>
+						<ul class="Radio_Buttons">
+							<li class="Radio_List"><input type="radio" class="m" id="m1" name="milk" value="Whole Milk"><label for="m1">Whole Milk</label></li>
+							<li class="Radio_List"><input type="radio" class="m" id="m2" name="milk" value="Semi-Skimmed Milk"><label for="m2">Semi-Skimmed Milk</label></li>
+							<li class="Radio_List"><input type="radio" class="m" id="m3" name="milk" value="Skimmed Milk"><label for="m3">Skimmed Milk</label></li>
+							<li class="Radio_List"><input type="radio" class="m" id="m4" name="milk" value="Coconut Milk"><label for="m4">Coconut Milk</label></li>
+							<li class="Radio_List"><input type="radio" class="m" id="m5" name="milk" value="Soya Milk"><label for="m5">Soya Milk</label></li>
+						</ul>
+				
+					</section>
+
+					<section id="extras_drink">
+						
+						<br><br><legend class="Coffee_headers"><strong>Extras</strong></legend><br>
+						<input type="checkbox" id="e1" name="extras" value="Sugar"><label for="e1">Sugar</label><br>
+						<input type="checkbox" id="e2" name="extras" value="Cream"><label for="e2">Cream</label><br>
+						<div class="no_of_shots">
+							<select id="e3">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select><label for="e3">Number of Syrup Shots</label>
+						</div>
+					</section>
+
+					<br><br>
+					<p class="buttons"><button type="button" class = "button" id="add">Add to Order</button>       <button type="button" class = "button" id="add_favourite">Add to Favourites</button></p>
+
+				</fieldset>
+			</form>
+				
+			<section id="total_order">
+
+					<h3 class="coffee_title">Current Order</h3>
+					<p id="output">
+					</p>
+					<p id="cost"></p>
+
+					<h3 class="coffee_title">Total Order</h3>
+					<p id="output2"></p>
+					<p id="cost2"></p>
+
+					<br><br>
+					
+					<p class="buttons"><button type="button" class = "button" id="place">Place Order</button></p>
+
+			</section>
+		</main>
+		<footer id="coffee_footer">
+			<p>Images from unsplash.com and calligraphyalphabet.org.</p>
+		</footer>
+
+		<script src="Coffee.js"></script>
+		<script>
+			//check whether browser support service workers
+			if ('serviceWorker' in navigator) {
+				//wait until page loaded to avoid delaying rendering
+				window.addEventListener('load', function() {
+					//register service worker
+					navigator.serviceWorker.register('serviceworker.js').then(
+						function(registration) {
+							console.log('Service worker registration successful', 
+										 registration);
+						}, 
+						function(err) {
+							console.log('Service worker registration failed', err);
+					});
+				});
+			}
+		</script>
+	</body>
+</html>        
+            
